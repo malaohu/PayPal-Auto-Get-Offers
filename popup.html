@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>自动领取PayPal代金券</title>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body style="width: 650px; height: 400px;">
+<div class="form">
+	<b>让遗憾不再有！！！全自动领取代金券！！</b>
+<div class="form-group">
+	<label >PayPal券地址</label>
+	<input id="paypal_offer_url" class="form-control" value="https://www.paypal-biz.com/campaign/Nov"/>
+</div>
+<div class="form-group">
+	<label >最后一次券编号</label>
+	<input id="paypal_last_offer_id" class="form-control" value="FFUR6JGL6XV4L"/>
+ </div>
+<div class="form-group">
+	<label >PayPal账号</label>
+	<input id="paypal_email" class="form-control" />
+ </div>
+ <div class="form-group">
+	<label >PayPal密码</label>
+	<input id="paypal_pwd" class="form-control" />
+ </div>
+  <div class="form-group">
+	<label >监控间隔(毫秒,1秒=1000毫秒)</label>
+	<input id="paypal_inter" class="form-control" value="60000" />
+ </div>
+    <button id="doit" class="btn btn-success">！！保存数据</button>
+</div>
+    <script src="jquery.js"></script>
+    <script src="popup.js"></script>
+</body>
+</html>

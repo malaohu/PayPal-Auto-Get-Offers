@@ -1,0 +1,24 @@
+﻿{
+	"manifest_version": 2,
+	"name": "PayPal自动领取代金券",
+	"description": "PayPal自动领取代金券！让遗憾不再有！！更多内容：http://51.RUYO.net",
+	"version": "0.0.1",
+	"icons": { "16": "img/16.png",
+           "48": "img/48.png",
+          "128": "img/128.png" },
+	"permissions": ["tabs","https://www.paypal.com/*","https://www.paypal-biz.com/*"],
+	"content_scripts": [
+	    {
+	      "matches": ["https://www.paypal.com/*"],
+	      "js": ["jquery.js","paypal.js"]
+	    }
+	 ],
+	"browser_action": {
+	    "default_icon": "img/48.png" ,
+	    "default_title": "PayPal自动领取代金券",
+	    "default_popup": "popup.html"
+	  },
+	"background": {
+		"page": "backgroud.html"
+	}
+}
